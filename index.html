@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Libas-e-Khas</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: absolute;
+  width: 100%;
+  color: white;
+  z-index: 10;
+}
+
+nav h1 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+/* Section */
+.section {
+  padding: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Product Section */
+.products {
+  padding: 60px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.card p {
+  color: gray;
+}
+
+/* Footer */
+footer {
+  padding: 40px;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>LIBAS-E-KHAS</h1>
+  <ul>
+    <li>WOMAN</li>
+    <li>MAN</li>
+    <li>KIDS</li>
+    <li>SALE</li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <h2>NEW COLLECTION</h2>
+</section>
+
+<!-- Image Grid -->
+<section class="section">
+  <div class="grid">
+    <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+    <img src="https://images.unsplash.com/photo-1583002625243-5d9b58c7b51f">
+  </div>
+</section>
+
+<!-- Products -->
+<section class="products">
+  <div class="product-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593032465171-8f4c3b7c6d3d">
+      <h3>Embroidered Maxi</h3>
+      <p>PKR 4,999</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1602810317324-86c5db46c0c6">
+      <h3>Luxury Lawn Suit</h3>
+      <p>PKR 3,499</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+      <h3>Formal Dress</h3>
+      <p>PKR 5,999</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 LIBAS-E-KHAS</p>
+</footer>
+
+</body>
+</html>
